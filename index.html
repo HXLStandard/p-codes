@@ -7,7 +7,7 @@
   <body>
     <h1>Experimental p-coding site</h1>
     <p>This site contains GeoJSON files with names matching
-    humanitarian <dfn>p-codes</dfn> (place codes).</p>
+    UNHCR <dfn>p-codes</dfn> (place codes).</p>
 
     <section id="usage">
       <h2>Usage</h2>
@@ -20,45 +20,53 @@
         <h3>Parameters</h3>
         <dl>
           <dt>{COUNTRY}</dt>
-          <dd>An ISO 3166-1 alpha3 code for the country, e.g. "MLI" for
-          Mali.</dd>
-          <dt>{P-CODE}</dt>
-          <dd>The p-code, e.g. "MLI001002" used in the refugee registration database for the
-          Bafoulabé Cercle (ADM2) of the Kayes Region (ADM1) of Mali.</dd>
+          <dd>An ISO 3166-1 alpha3 code for the country, e.g. "JOR" for
+          Jordan.</dd>
+          <dt>{admin-level}</dt>
+          <dd>The requested admin-level (ADM1, ADM2, ADM3, ADM4) for the country.</dd>
           <dt>{TYPE}</dt>
-          <dd>Currently only "shape" is present (for the boundary
-          [multi]polygon), but the site will eventually support other
-          feature types.</dd>
+          <dd>geoJson present boundaries using
+          [multi]polygon.</dd>
         </dl>
       </section>
     </section>
+    
+    <section id="maintain">
+      <h2>Maintain</h2>
+      <p>The files are text based and can be maintained directly in Github. please send a request to get access this repository</p>
+    </section>
+    
+    
     <section id="example">
       <h2>Example</h2>
-      <p>Download the GeoJSON polygon for the bounds of the Bafoulabé
-      Cercle of the Kayes Region of Mali (p-code "MLI001002"):</p>
+      <p>Download the GeoJSON polygon for admin level 1 of Jordan (Governorates):</p>
       <blockquote>
-        <code><a href="http://unhcr-mena.github.io/p-codes/MLI/level1.geojson">http://unhcr-mena.github.io/p-codes/MLI/level1.geojson</a></code>
+        <code><a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson</a></code>
       </blockquote>
     </section>
     <section id="coverage">
       <h2>Current coverage</h2>
+      
+      <h3>Middle East</h3>
       <dl>
-        <dt><a href="CMR/">CMR</a></dt>
-        <dd>Cameroon (ADM0, ADM1, ADM2)</dd>
-        <dt><a href="GIN/">GIN</a></dt>
-        <dd>Guinea (ADM0, ADM1, ADM2, ADM3)</dd>
-        <dt><a href="MLI/">MLI</a></dt>
-        <dd>Mali (ADM0, ADM1, ADM2, ADM3)</dd>
-        <dt><a href="NER/">NER</a></dt>
-        <dd>Niger (ADM0, ADM1, ADM2)</dd>
-        <dt><a href="NGA/">NGA</a></dt>
-        <dd>Nigeria (ADM0, ADM1, ADM2)</dd>
-        <dt><a href="NPL/">NPL</a></dt>
-        <dd>Nepal (ADM0, ADM1, ADM2, ADM3, ADM4)</dd>
-        <dt><a href="SOM/">SOM</a></dt>
-        <dd>Somalia (ADM1)</dd>
-        <dt><a href="TCD/">TCD</a></dt>
-        <dd>Chad (ADM0, ADM1, ADM2)</dd>
+        <dt><a href="JOR/">JOR</a></dt>
+        <dd>Jordan ( 
+        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
+        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
+      </dl>
+      <h3>Gulf Cooperation Council</h3>
+      <dl>
+        <dt><a href="JOR/">JOR</a></dt>
+        <dd>Jordan ( 
+        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
+        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
+      </dl>
+      <h3>North Africa</h3>
+      <dl>
+        <dt><a href="JOR/">JOR</a></dt>
+        <dd>Jordan ( 
+        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
+        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
       </dl>
     </section>
   </body>
