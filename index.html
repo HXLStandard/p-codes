@@ -1,73 +1,180 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,follow">
+    <meta name="author" content="Edouard Legoupil @edouard_lgp">
+    <link rel="canonical" href="">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A Year in Review">
+    <meta property="og:url" content=" ">
+    <meta property="og:site_name" content="UNHCR Information Management Framework for Camps ">
+    <meta property="og:image" content="">
+    <link rel="shortlink" href="">
+    <meta name="description" content="">
     <title>Experimental p-coding site</title>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    
+    <link rel="stylesheet" href="css/bootswatch.min.css">
+    <link rel="stylesheet" href="css/font-humanitarian.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
   </head>
   <body>
-    <h1>Experimental p-coding site</h1>
-    <p>This site contains GeoJSON files with names matching
-    UNHCR <dfn>p-codes</dfn> (place codes).</p>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Geographic p-codes</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+                <li><a href="#Usage">Usage</a></li>
+                <li><a href="#Parameters">Parameters</a></li>
+                <li><a href="#Maintain">Maintain</a></li>
+                <li><a href="#Example">Example</a></li>
+           </ul>
 
-    <section id="usage">
-      <h2>Usage</h2>
-      <p>The files use the following naming scheme:</p>
-      <blockquote>
-        <code>https://unhcr-mena.github.io/p-codes/{COUNTRY}/{admin-level}.geojson</code>
-      </blockquote>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://data.unhcr.org/imtoolkit/" target="_blank">IM Tool kit</a></li>
+            <li><a href="http://maps.unhcr.org" target="_blank">Mapping Server</a></li>
+            <li><a href="http://data.unhcr.org/" target="_blank">Data portal</a></li>
+          </ul>
 
-      <section id="parameters">
-        <h3>Parameters</h3>
-        <dl>
-          <dt>{COUNTRY}</dt>
-          <dd>An ISO 3166-1 alpha3 code for the country, e.g. "JOR" for
-          Jordan.</dd>
-          <dt>{admin-level}</dt>
-          <dd>The requested admin-level (ADM1, ADM2, ADM3, ADM4) for the country.</dd>
-          <dt>{TYPE}</dt>
-          <dd>geoJson present boundaries using
-          [multi]polygon.</dd>
-        </dl>
-      </section>
-    </section>
-    
-    <section id="maintain">
-      <h2>Maintain</h2>
-      <p>The files are text based and can be maintained directly in Github. please send a request to get access this repository</p>
-    </section>
-    
-    
-    <section id="example">
-      <h2>Example</h2>
-      <p>Download the GeoJSON polygon for admin level 1 of Jordan (Governorates):</p>
-      <blockquote>
-        <code><a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson</a></code>
-      </blockquote>
-    </section>
-    <section id="coverage">
-      <h2>Current coverage</h2>
-      
-      <h3>Middle East</h3>
-      <dl>
-        <dt><a href="JOR/">JOR</a></dt>
-        <dd>Jordan ( 
-        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
-        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
-      </dl>
-      <h3>Gulf Cooperation Council</h3>
-      <dl>
-        <dt><a href="JOR/">JOR</a></dt>
-        <dd>Jordan ( 
-        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
-        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
-      </dl>
-      <h3>North Africa</h3>
-      <dl>
-        <dt><a href="JOR/">JOR</a></dt>
-        <dd>Jordan ( 
-        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
-        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
-      </dl>
-    </section>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="container">
+
+    <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="bs-component">
+              <div class="jumbotron">
+                <h1>Experimental p-coding site</h1>
+                <p>This site contains GeoJSON files with names matching
+                    UNHCR <dfn>p-codes</dfn> (place codes).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-12" id="Usage">
+                <div class="page-header" >
+                      <h2>Usage</h2>
+                      <p>The files use the following naming scheme:</p>
+                      <blockquote>
+                        <code>https://unhcr-mena.github.io/p-codes/{COUNTRY}/{admin-level}.geojson</code>
+                      </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-12" id="Parameters">
+                <div class="page-header" >
+                        <h3>Parameters</h3>
+                        <dl>
+                          <dt>{COUNTRY}</dt>
+                          <dd>An ISO 3166-1 alpha3 code for the country, e.g. "JOR" for
+                          Jordan.</dd>
+                          <dt>{admin-level}</dt>
+                          <dd>The requested admin-level (ADM1, ADM2, ADM3, ADM4) for the country.</dd>
+                          <dt>{TYPE}</dt>
+                          <dd>geoJson present boundaries using
+                          [multi]polygon.</dd>
+                        </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-12" id="Maintain">
+                <div class="page-header" >
+                      <h2>Maintain</h2>
+                      <p>The files are text based and can be maintained directly in Github. please send a request to get access this repository</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-12" id="Example">
+                <div class="page-header" >
+                      <h2>Example</h2>
+                      <p>Download the GeoJSON polygon for admin level 1 of Jordan (Governorates):</p>
+                      <blockquote>
+                        <code><a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson</a></code>
+                      </blockquote>
+                    </section>
+                    <section id="coverage">
+                      <h2>Current coverage</h2>
+                      
+                      <h3>Middle East</h3>
+                      <dl>
+                        <dt><a href="JOR/">JOR</a></dt>
+                        <dd>Jordan ( 
+                        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
+                        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
+                      </dl>
+                      <h3>Gulf Cooperation Council</h3>
+                      <dl>
+                        <dt><a href="JOR/">JOR</a></dt>
+                        <dd>Jordan ( 
+                        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
+                        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
+                      </dl>
+                      <h3>North Africa</h3>
+                      <dl>
+                        <dt><a href="JOR/">JOR</a></dt>
+                        <dd>Jordan ( 
+                        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM1.geojson">ADM1</a>, 
+                        <a href="http://unhcr-mena.github.io/p-codes/JOR/ADM2.geojson">ADM2</a>)</dd>
+                      </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+
+          </div>
+        </div>
+
+      </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootswatch.js"></script>
+  </body>
+</html>
   </body>
 </html>
