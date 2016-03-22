@@ -1,5 +1,6 @@
 # p-codes
-Geographical codes for humanitarian work (experimental)
+
+Managing Geographical codes in version control (experimental)
 
 See reference here: 
 
@@ -7,7 +8,7 @@ See reference here:
 
 * http://blog.okfn.org/2013/07/02/git-and-github-for-data/
 
- * http://blog.geomusings.com/2013/06/18/geojson-on-github-now-what/
+* http://blog.geomusings.com/2013/06/18/geojson-on-github-now-what/
 
- * http://geojson.io
+* http://geojson.io
 
