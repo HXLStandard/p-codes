@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
-    
+
     <link rel="stylesheet" href="css/bootswatch.min.css">
     <link rel="stylesheet" href="css/font-humanitarian.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -65,12 +65,12 @@
           <div class="col-lg-12">
               <div class="jumbotron">
                 <h1>Experimental p-coding site</h1>
-                <p>This site contains <a href="http://geojson.org/geojson-spec.html" target="_blank">GeoJson</a> files with names matching UNHCR <dfn>p-codes</dfn> (place codes) 
-                for administrative units. All geographic files hosted in  
+                <p>This site contains <a href="http://geojson.org/geojson-spec.html" target="_blank">GeoJson</a> files with names matching UNHCR <dfn>p-codes</dfn> (place codes)
+                for administrative units. All geographic files hosted in
                 <a href="https://help.github.com/articles/mapping-geojson-files-on-github" target="_blank">GitHub</a>
-                and managed under <a href="https://github.com/unhcr-mena/p-codes/commits/gh-pages" target="_blank">version control</a>. 
-                This site is based on an idea from the 
-                <a href="http://blog.okfn.org/2013/07/02/git-and-github-for-data/" target="_blank">Open Knowledge Institute</a> 
+                and managed under <a href="https://github.com/unhcr-mena/p-codes/commits/gh-pages" target="_blank">version control</a>.
+                This site is based on an idea from the
+                <a href="http://blog.okfn.org/2013/07/02/git-and-github-for-data/" target="_blank">Open Knowledge Institute</a>
                 and is forked from a <a href="http://hxlstandard.github.io/p-codes/" target="_blank">test from the Humanitarian Exchange Language (HXL) team</a></p>
               </div>
           </div>
@@ -114,28 +114,23 @@
                       <blockquote>
                         <code>https://unhcr-mena.github.io/p-codes/geojson/{COUNTRY}/{admin-level}.geojson</code>
                       </blockquote>
-                      
+
                       <p>The geoJSON map can also be placed in any HTML page that supports javascript (e.g., GitHub Pages) and embedded within an Iframe.</p>
-                      
                       <iframe src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson" width="620" height="420" frameborder="0"></iframe>
-                      
-                      <p>For example, for Jordan, the URL to the raw file is <code>https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson </code>, the embed code would be: 
-                      <xmp>
-                        <iframe 
+                      <p>For example, for Jordan, the URL to the raw file is <code>https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson </code>, the embed code would be:
+                      <code>
+                        <iframe
                         src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson"
                         width="620" height="420" frameborder="0">
                         </iframe>
-                      </xmp>
-                      
+                      </code>
                       <p>By default, the embedded map size is 420px x 620px, but you can customize the output by passing height and width variables as parameters at the end, such as <code>height=300&width=500</code>.</p>
-                      
-                      
-                      <p>geoJson is also support by multiple software:
+                      geoJson is also support by multiple software:
                       <ul>
                         <li><a href="https://blogs.esri.com/esri/arcgis/2014/12/16/arcgis-online-geojson/" target="_blank">ArcGIS online from ESRI</a></li>
                         <li>With ArcGIS, you can use ArcMap's Data Interoperability tools or <a href="https://github.com/jasonbot/geojson-madness" target="_blank"> this tool</a></li>
                         <li><a href="https://www.qgis.org/en/site/forusers/download.html" target="_blank">Qgis</a>. <img src="img/qgisgeosjon.png"></img></li>
-                        <li><a href="https://cran.r-project.org/" target="_blank">R statistical software</a>. use the library 
+                        <li><a href="https://cran.r-project.org/" target="_blank">R statistical software</a>. use the library
                         <code>
                             library("sp")
                             url <- "https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson"
@@ -143,26 +138,22 @@
                             plot(out)
                         </code>
                         </li>
-                      
                       </ul>
-                      
-                      </p>
-                      </div>
-            </div>
-            </div>       
+                </div>
+           </div>
        </div>
         <div class="row">
             <div class="col-lg-12" id="Disclaimer">
                 <div class="page-header" >
-                      <h2>Disclaimer</h2>                      
-                      <p>The designations employed and the presentation of the material on this map do not imply the expression of any opinion whatsoever on the part of the United Nations concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Every effort is made to ensure this map is free of errors but there is no warrant the map or its features are either spatially or temporally accurate or fit for a particular use. This map is provided without any warranty of any kind whatsoever, either express or implied.</p>    
-                      <h2>Content</h2> 
+                      <h2>Disclaimer</h2>
+                      <p>The designations employed and the presentation of the material on this map do not imply the expression of any opinion whatsoever on the part of the United Nations concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Every effort is made to ensure this map is free of errors but there is no warrant the map or its features are either spatially or temporally accurate or fit for a particular use. This map is provided without any warranty of any kind whatsoever, either express or implied.</p>
+                      <h2>Content</h2>
                       <ul>
                         <li> </li>
                         <li> </li>
                         <li> </li>
-                      
-                      </ul>                     
+
+                      </ul>
                 </div>
             </div>
         </div>
@@ -172,118 +163,118 @@
                       <h2>Maintain</h2>
                       <p>The files are text based and can be maintained directly in Github. please send a request to get access this repository</p>
                       <p>An online editor like <a href="http://geojson.io" target="_blank">geojson.io </a> can be sued to edit the file.</p>
-                      
+
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12" id="Coverage">
                       <h2>Current coverage</h2>
-                      
+
                       <h3>Syria Situation</h3>
                       <dl>
                         <dt><a href="JOR/">SYR</a></dt>
-                        <dd>Syrian Arab Republic ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Syrian Arab Republic (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">IRQ</a></dt>
-                        <dd>Iraq ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Iraq (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">JOR</a></dt>
-                        <dd>Jordan ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Jordan (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">LBN</a></dt>
-                        <dd>Lebanon ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Lebanon (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">TUR</a></dt>
-                        <dd>Turkey ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Turkey (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <h3>Other Countries</h3>
                       <dl>
                         <dt><a href="JOR/">IRN</a></dt>
-                        <dd>Iran ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Iran (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">ISR</a></dt>
-                        <dd>Israel( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Israel(
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">PSE</a></dt>
-                        <dd>State of Palestine ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>State of Palestine (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/LBN/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <h3>Gulf Countries</h3>
                       <dl>
                         <dt><a href="JOR/">GCC</a></dt>
-                        <dd>Gulf Cooperation Council - Includes: BAH: Bahrein; OMN: Oman; OMN: Oman; UAE: United Arab Emirates; SAU: Saudi Arabia; KWT: Kuwait; QAT: Qatar ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Gulf Cooperation Council - Includes: BAH: Bahrein; OMN: Oman; OMN: Oman; UAE: United Arab Emirates; SAU: Saudi Arabia; KWT: Kuwait; QAT: Qatar (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">YEM</a></dt>
-                        <dd>Yemen ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Yemen (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <h3>North Africa</h3>
                       <dl>
                         <dt><a href="JOR/">MRT</a></dt>
-                        <dd>Mauritania ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Mauritania (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">ESH</a></dt>
-                        <dd>Western Sahara ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Western Sahara (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">MAR</a></dt>
-                        <dd>Morocco ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Morocco (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">DZA</a></dt>
-                        <dd>Algeria ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Algeria (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">TUN</a></dt>
-                        <dd>Tunisia ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Tunisia (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">LBY</a></dt>
-                        <dd>Libya ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Libya (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                       <dl>
                         <dt><a href="JOR/">EGY</a></dt>
-                        <dd>Egypt ( 
-                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>, 
+                        <dd>Egypt (
+                        <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM1.geojson" target="_blank">ADM1</a>,
                         <a href="https://github.com/unhcr-mena/p-codes/blob/gh-pages/geojson/JOR/ADM2.geojson" target="_blank">ADM2</a>)</dd>
                       </dl>
                 </div>
