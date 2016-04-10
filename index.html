@@ -39,19 +39,19 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-                <li><a href="#Parameters">Parameters</a></li
-                <li><a href="#Example">Example</a></li>
-                <li><a href="#Usage">Usage</a></li>
-                <li><a href="#Disclaimer">Disclaimer</a></li>
-                <li><a href="#Schema">Schema</a></li>
-                <li><a href="#Maintain">Maintain</a></li>
-                <li><a href="#Coverage">Coverage</a></li>
+                <li><strong><a href="#Parameters">Parameters</a></strong></li>
+                <li><strong><a href="#Example">Example</a></strong></li>
+                <li><strong><a href="#Usage">Usage</a></strong></li>
+                <li><strong><a href="#Disclaimer">Disclaimer</a></strong></li>
+                <li><strong><a href="#Schema">Schema</a></strong></li>
+                <li><strong><a href="#Maintain">Maintain</a></strong></li>
+                <li><strong><a href="#Coverage">Coverage</a></strong></li>
            </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://data.unhcr.org/imtoolkit/" target="_blank">IM Tool kit</a></li>
-            <li><a href="http://maps.unhcr.org" target="_blank">Mapping Server</a></li>
-            <li><a href="http://data.unhcr.org/" target="_blank">Data portal</a></li>
+            <li><strong><a href="http://data.unhcr.org/imtoolkit/" target="_blank">IM Tool kit</a></strong></li>
+            <li><strong><a href="http://maps.unhcr.org" target="_blank">Mapping Server</a></strong></li>
+            <li><strong><a href="http://data.unhcr.org/" target="_blank">Data portal</a></strong></li>
           </ul>
 
         </div>
@@ -89,8 +89,7 @@
                           <dt>{admin-level}</dt>
                           <dd>The requested admin-level (ADM1, ADM2, ADM3, ADM4) for the country.</dd>
                           <dt>{TYPE}</dt>
-                          <dd>geoJson present boundaries using
-                          [multi]polygon.</dd>
+                          <dd>geoJson present boundaries using [multi]polygon.</dd>
                         </dl>
                 </div>
             </div>
@@ -111,29 +110,20 @@
             <div class="col-lg-12" id="Usage">
                 <div class="page-header" >
                       <h2>Usage</h2>
-                      <p>The files use the following naming scheme:</p>
-                      <blockquote>
-                        <code>https://unhcr-mena.github.io/p-codes/geojson/{COUNTRY}/{admin-level}.geojson</code>
-                      </blockquote>
-
+                      <p>The files use the following naming scheme: <code>https://unhcr-mena.github.io/p-codes/geojson/{COUNTRY}/{admin-level}.geojson</code></p>
                       <p>The geoJSON map can also be placed in any HTML page that supports javascript (e.g., GitHub Pages) and embedded within an Iframe. For example, for Jordan, the URL to the raw file is accessible @ <code>https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson </code>.</p>
+                      
                       <iframe src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson" width="620" height="420" frameborder="0"></iframe>
                       
                       <p>By default, the embedded map size from <code>https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson</code> is 420px x 620px, but you can customize the output by passing height and width variables as parameters at the end, such as <code>height=300&width=500</code>.</p>
-                      geoJson is also support by multiple software:
-                      <ul>
-                        <li><a href="https://blogs.esri.com/esri/arcgis/2014/12/16/arcgis-online-geojson/" target="_blank">ArcGIS online from ESRI</a></li>
-                        <li>With ArcGIS, you can use ArcMap's Data Interoperability tools or <a href="https://github.com/jasonbot/geojson-madness" target="_blank"> this tool</a></li>
-                        <li><a href="https://www.qgis.org/en/site/forusers/download.html" target="_blank">Qgis</a>. <img src="img/qgisgeosjon.png"></img></li>
-                        <li><a href="https://cran.r-project.org/" target="_blank">R statistical software</a> and use the SP library
-                        <code>
-                            library("sp");
-                            url <- "https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson";
-                            out <- geojson_read(url, verbose = FALSE);
-                            plot(out);
-                        </code>
-                        </li>
-                      </ul>
+                      
+                      <p>GeoJson is also supported by multiple softwares.</p>
+                      
+                      <p>With ArcGIS, you can use ArcMap's Data Interoperability tools or <a href="https://github.com/jasonbot/geojson-madness" target="_blank"> this tool</a>. You can also use <a href="https://blogs.esri.com/esri/arcgis/2014/12/16/arcgis-online-geojson/" target="_blank">ArcGIS online from ESRI</a></p>
+                      
+                      <p>With <a href="https://www.qgis.org/en/site/forusers/download.html" target="_blank">Qgis</a>. <img src="img/qgisgeosjon.png"></img></p>
+                      
+                      <p>With <a href="https://cran.r-project.org/" target="_blank">R statistical software</a> and use the SP library  <code>library("sp");  url <- "https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson";  out <- geojson_read(url, verbose = FALSE);  plot(out); </code></p>
                 </div>
            </div>
        </div>
@@ -149,10 +139,21 @@
             <div class="col-lg-12" id="Schema">
                 <div class="page-header" >
                       <h2>Schema</h2>
+                      <p>The schema is designed to allow for mapping of various thematic dataset. Unique ID from various systems are included.</p>
+
                       <ul>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
+                        <li><strong><strong>gid<strong>Unique ID for this dataset</li>
+                        <li><strong>name </strong>  Admin Unit name</li>
+                        <li><strong>name_alt </strong>Admin Unit alternative  name</li>
+                        <li><strong>name_ar </strong> Admin Unit name  in Arabic</li>
+                        <li><strong>name_aralt </strong>Admin Unit alternative name in Arabic</li>
+                        <li><strong>iso3 </strong> Country Code ISO3</li>
+                        <li><strong>idprogres </strong> ID for UNHCR <a href="http://progres.unhcr.org">proGres refugee registration system</a></li>
+                        <li><strong>idfocus </strong> ID for UNHCR <a href="http://focus.unhcr.org">Focus system</a></li>
+                        <li><strong>idgaul </strong> ID for FAO <a href="http://focus.unhcr.org">GAUL - Global Administrative Unit Database</a></li>
+                        <li><strong>idnatural</strong> ID for <a href="http://focus.unhcr.org">Natural Earth</a></li>
+                        <li><strong>idicrc </strong> ID for ICRC</li>
+                        <li><strong>idocha </strong> ID for OCHA COD</li>
 
                       </ul>
                 </div>
@@ -282,18 +283,20 @@
             </div>
         </div>
   </div>
+  </div>
+  </div>
 
 
 
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+<footer>
+    <div class="row" class="footer">
+      <div class="col-lg-12">
+        <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
 
-          </div>
-        </div>
+      </div>
+    </div>
 
-      </footer>
+</footer>
 
 
 
