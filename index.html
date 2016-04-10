@@ -43,6 +43,7 @@
                 <li><a href="#Example">Example</a></li>
                 <li><a href="#Usage">Usage</a></li>
                 <li><a href="#Disclaimer">Disclaimer</a></li>
+                <li><a href="#Schema">Schema</a></li>
                 <li><a href="#Maintain">Maintain</a></li>
                 <li><a href="#Coverage">Coverage</a></li>
            </ul>
@@ -115,13 +116,9 @@
                         <code>https://unhcr-mena.github.io/p-codes/geojson/{COUNTRY}/{admin-level}.geojson</code>
                       </blockquote>
 
-                      <p>The geoJSON map can also be placed in any HTML page that supports javascript (e.g., GitHub Pages) and embedded within an Iframe. For example, for Jordan, the URL to the raw file is <code>https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson </code>, the embed code would be:
-                      <code>
-                        <iframe
-                        src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson"
-                        width="620" height="420" frameborder="0">
-                        </iframe>
-                      </code>
+                      <p>The geoJSON map can also be placed in any HTML page that supports javascript (e.g., GitHub Pages) and embedded within an Iframe. For example, for Jordan, the URL to the raw file is accessible @ <code>https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson </code>.</p>
+                      <iframe src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson" width="620" height="420" frameborder="0"></iframe>
+                      
                       <p>By default, the embedded map size from <code>https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson</code> is 420px x 620px, but you can customize the output by passing height and width variables as parameters at the end, such as <code>height=300&width=500</code>.</p>
                       geoJson is also support by multiple software:
                       <ul>
@@ -130,10 +127,10 @@
                         <li><a href="https://www.qgis.org/en/site/forusers/download.html" target="_blank">Qgis</a>. <img src="img/qgisgeosjon.png"></img></li>
                         <li><a href="https://cran.r-project.org/" target="_blank">R statistical software</a> and use the SP library
                         <code>
-                            library("sp")
-                            url <- "https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson"
-                            out <- geojson_read(url, verbose = FALSE)
-                            plot(out)
+                            library("sp");
+                            url <- "https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson";
+                            out <- geojson_read(url, verbose = FALSE);
+                            plot(out);
                         </code>
                         </li>
                       </ul>
@@ -145,7 +142,13 @@
                 <div class="page-header" >
                       <h2>Disclaimer</h2>
                       <p>The designations employed and the presentation of the material on this map do not imply the expression of any opinion whatsoever on the part of the United Nations concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Every effort is made to ensure this map is free of errors but there is no warrant the map or its features are either spatially or temporally accurate or fit for a particular use. This map is provided without any warranty of any kind whatsoever, either express or implied.</p>
-                      <h2>Content</h2>
+                </div>
+           </div>
+       </div>
+        <div class="row">
+            <div class="col-lg-12" id="Schema">
+                <div class="page-header" >
+                      <h2>Schema</h2>
                       <ul>
                         <li> </li>
                         <li> </li>
@@ -159,8 +162,8 @@
             <div class="col-lg-12" id="Maintain">
                 <div class="page-header" >
                       <h2>Maintain</h2>
-                      <p>The files are text based and can be maintained directly in Github. please send a request to get access this repository</p>
-                      <p>An online editor like <a href="http://geojson.io" target="_blank">geojson.io </a> can be sued to edit the file.</p>
+                      <p>The files are text based and can be maintained directly in Github. The present repo can be foreked and pull request can be submitted if files have changed.</p>
+                      <p>Files can be then edited through aregular GIS software or directly through in a an online editor like <a href="http://geojson.io" target="_blank">GEOJSON.io</a>.</p>
 
                 </div>
             </div>
