@@ -123,7 +123,7 @@
                       
                       <p>With <a href="https://cran.r-project.org/" target="_blank">R statistical software</a> and use the SP library  <code>library("sp");  url <- "https://raw.githubusercontent.com/unhcr-mena/p-codes/gh-pages/geojson/JOR/ADM1.geojson";  out <- geojson_read(url, verbose = FALSE);  plot(out); </code></p>
                       
-                      <p>In addition a pcode reference file, <strong>itemsets.csv</strong>, is available for each country. This reference file can be used when creating "Cascading selects" within forms as an <strong>select_one_external</strong> within <a href="http://xlsform.org/#external" target="_blank">XLSFORM</a> questionnaires. The <strong>itemsets.csv</strong> file can be uploaded to <a href="https://kobo.unhcr.org" target="_blank">UNHCR Kobo Server</a> as a media file. It will be downloaded to any Kobo Collect like any other media file and saved to the [form-filename]-media folder. Clients like Kobo Collect load media files from the SD card and so a field data collection form with all locations within the country can load very quickly.</p>
+                      <p>In addition a pcode reference file, <strong>itemsets.csv</strong>, is available for each country. This reference file can be used when creating <a href="http://xlsform.org/#cascade" target="_blank">Cascading selects</a> geographic questions using the <strong>select_one_external</strong> function within <a href="http://xlsform.org/#external" target="_blank">XLSFORM</a> questionnaires. The <strong>itemsets.csv</strong> file can be uploaded to <a href="https://kobo.unhcr.org" target="_blank">UNHCR Kobo Server</a> as a media file. It will be downloaded to any Kobo Collect like any other media file and saved to the [form-filename]-media folder. Clients like Kobo Collect load media files from the SD card and so a field data collection form with all locations within the country can load very quickly.</p>
                 </div>
            </div>
        </div>
@@ -163,8 +163,9 @@
             <div class="col-lg-12" id="Maintain">
                 <div class="page-header" >
                       <h2>Maintain</h2>
-                      <p>The files are text based and can be maintained directly in Github. The present repo can be foreked and pull request can be submitted if files have changed.</p>
-                      <p>Files can be then edited through aregular GIS software or directly through in a an online editor like <a href="http://geojson.io" target="_blank">GEOJSON.io</a>.</p>
+                      <p>The files are text based and can be maintained directly in Github.</p>
+                      <p>Files can be then edited through a regular GIS software or directly through in a an online editor like <a href="http://geojson.io" target="_blank">GEOJSON.io</a>.</p>
+                      <p>The present repo can be forked and pull request can be submitted if files have changed.</p>
 
                 </div>
             </div>
